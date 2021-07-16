@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Superstar Tip Calculator App </title>
+</head>
+<body>
+
+    <div class="cover-body">
+        <div id="tip-calculator">
+        <h1 class="topic">TIP CALCULATOR </h1>
+    </div>
+        <div class="bill-amount">
+            <h1>How much was your bill ??  </h1>
+            <label for="dollar"> $ </label>
+            <input type="text" id="billAmount" >
+        </div>
+        <div class="bill-amount">
+            <h1>How was your service</h1>
+            <select  id="service-quality">
+            <option value=""> --Choose an option -- </option>
+            <option value="30"> 30 % -- Outstanding</option>
+            <option value="20"> 20% -- Good </option>
+            <option value="15">15% -- It was OK</option>
+            <option value="10">10% -- Bad</option>
+            <option value="5"> 5% -- terrible </option>
+        </select>
+        </div>
+        <div class="bill-amount"> 
+            <h1>How many people are sharing the bill ? </h1>
+            <input type="text" id="no-of-person">
+            <label for=" no-of-person "> People</label>
+        </div>
+        <button id="calculate" onclick=" getInputValue()" > Calculator </button>
+
+
+    <div id="totalTip">
+        <p>Tip Amount   </p>
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+      </div>
+      <!--totalTip end-->
+      
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
